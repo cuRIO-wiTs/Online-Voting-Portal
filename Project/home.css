@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper{
+    background-color:#BAB2B5;
+    background-size: cover;
+    height: 100%;
+}
+
+.navbar{
+    height: 80px;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+}
+
+.logo{
+    width: 140px;
+    height: 40%;
+    padding: 20px 100px;
+}
+
+.navbar ul{
+    float: right;
+    margin-right: 20px;
+}
+
+.navbar ul li{
+    list-style: none;
+    margin: 0 8px;
+    display:inline-block;
+    line-height: 80px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #071625;
+    font-size: 20px; 
+    transition: .4s;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover{
+    background:seashell;
+    border-radius: 2px;
+}
+
+.wrapper .center{
+    position:absolute;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%, -50%);
+}
+
+.center h1{
+    font-size: 45px;
+    font-weight: bold;
+    width: 900px;
+    text-align: center;
+}
+
+.center h2{
+    font-size: 25px;
+    font-weight: lighter;
+    width: 885px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.button{
+    font-size: 30px;
+    font-weight: bold;
+    width: 900px;
+    text-align: center;
+    margin-top: 300px;
+    padding-left:180px; 
+}
+
+.announcement{
+    font-size:27px;
+    font-weight:bold;
+    padding-top: 100px;
+}
+
+.hello{
+    width:50px;
+    height:50;
+} 
+
+.about img{
+    width: 25%;
+    height:25%;
+    padding-left: 480px;
+    padding-bottom: 1px;
+}
+.about h2{
+    margin-top: 75px;
+    text-align:left;
+    /* padding-bottom: 230px; */
+    font-size: 50px;
+}

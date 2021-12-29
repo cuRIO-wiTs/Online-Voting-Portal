@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .tab {
+            display: inline-block;
+            margin-left: 300px;
+        }
+
+        .submit-btn {
+            width: 30%;
+            text-align: center;
+            color: white;
+            border-radius: 12px;
+            padding: 20px 30px;
+
+            cursor: pointer;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            background: #123C69;
+        }
+
+        .submit-btn:hover {
+            color: #ffff99;
+        }
+
+        .voting-table img {
+            width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        a {
+            color: black;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        a:hover {
+            color: rgb(82, 80, 80);
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0.4);
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            width: 100%;
+        }
+
+        .navbar a {
+            float: right;
+            display: block;
+            color: #000000;
+            text-align: center;
+            padding: 15px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            background: #fdfbfd;
+            color: black;
+        }
+    </style>
+</head>
+
+<body bgcolor="#BAB2B5">
+    <div class="navbar">
+        <a href="home.html">Home</a>
+    </div>
+    <div class="voting">
+        <h1 id="heading" ; style="text-align:center; font-size: 80px;">VOTE</h1>
+        <p style="text-align:center; font-size: 40px;"> Kindly, vote for your preferred cadidate</p>
+    </div>
+    <div class="voting-table">
+        <table>
+            <tr>
+                <td><img src="1.jpeg" alt="candidate one"></td>
+                <span class="tab"></span><span class="tab"></span>
+                <td>
+                    <a href="s1info.html"><span class="tab"></span>Sanvy</a>
+                </td>
+                <td>
+                    <form action="voting.php" method="POST">
+                        <span class="tab"></span></span>
+                        <button type="submit" class="submit-btn"value="sanvy" id="vote" name="vote"><span class="tab"></span>VOTE HERE</button>
+                    </form>
+                </td>
+
+
+            </tr>
+            <tr>
+                <td><img src="2.jpeg" alt="candidate two"></td>
+                <span class="tab"></span><span class="tab"></span>
+                <td>
+                    <a href="s2info.html"><span class="tab"></span>Adi</a>
+                </td>
+                <td>
+                    <form action="voting.php" method="POST">
+                        <span class="tab"></span>
+                        <button type="submit" class="submit-btn" value="adi" id="vote" name="vote"><span class="tab"></span>VOTE HERE</button>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="3.jpeg" alt="candidate thre"></td>
+                <span class="tab"></span><span class="tab"></span>
+                <td>
+                    <a href="s3info.html"><span class="tab value=3"></span>Dhruv</a>
+                </td>
+                <td>
+                    <form action="voting.php" method="POST">
+                        <span class="tab"></span>
+                        <button type="submit" class="submit-btn" value="dhruv" id="vote" name="vote" ><span class="tab"></span>VOTE HERE</button>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="4.jpeg" alt="candidate four"></td>
+                <span class="tab"></span><span class="tab"></span>
+                <td>
+                    <a href="s4info.html"><span class="tab value=4"></span>Shreya</a>
+                </td>
+                <td>
+                    <form action="voting.php" method="POST">
+                        <span class="tab"></span>
+                        <button type="submit" class="submit-btn" value="shreya" id="vote" name="vote"><span class="tab"></span>VOTE HERE</button>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="5.jpeg" alt="candidate five"></td>
+                <span class="tab"></span><span class="tab"></span>
+                <td>
+                    <a href="s5info.html"><span class="tab"></span>Aryan</a>
+                </td>
+                <td>
+                    <form action="voting.php" method="POST">
+                        <span class="tab"></span>
+                        <button type="submit" class="submit-btn" value="aryan" id="vote" name="vote"><span class="tab"></span>VOTE HERE</button>
+                    </form>
+                </td>
+            </tr>
+        </table>
+</body>
+
+</html>

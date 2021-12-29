@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>main</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1">
+    <link rel="stylesheet" type="text/css" href="sisu.css">
+</head>
+
+<body>
+
+    <div id="img" style="float: left; padding: 30px;">
+        <img src="vote.png">
+    </div>
+
+    <div id=signin>
+        <form id="signin_form" method="POST" action="login.php">
+            <h2>SIGN IN</h2>
+            <div class=options>
+                Student<input type="radio" id="page" name="page" value="Student"><br>
+                Candidate<input type="radio" id="page" name="page" value="Candidate">
+            </div>
+        
+
+            <label for="email">Email Id</label>
+            <input type="text" id="signin_username" name="signin_username">
+            <label for="password">Password</label>
+            <input type="password" id="signin_password" name="signin_password">
+            <button id="signin_button" type="submit" form="signin_form" value="Submit">Sign
+                In</button>
+            <p class="forgot-pass">Forgot Password</p>
+        </form>
+        <div onclick="switchVisible()"
+            style="text-align: center;padding: 15px; text-decoration: underline; cursor: pointer;">Sign up</div>
+    </div>
+
+
+    <div id="signup" style="display: none;">
+        <form id="signup_form" method="POST" action="signup.php">
+            <h2>SIGN UP</h2>
+            <label for="fullname">Full Name</label>
+            <input type="text" id="signup_fullname" name="signup_fullname">
+            <label for="email">Email ID</label>
+            <input type="email" id="signup_email" name="signup_email">
+            <label for="signup_password1">Password</label>
+            <input type="password" id="signup_password" name="signup_password">
+            <label for="signup_password">Confirm</label>
+            <input type="password" id="signup_password" name="signup_password">
+            <button id="signup_button" type="submit" form="signup_form" value="Submit">Sign up</button>
+
+        </form>
+        <div onclick="switchVisible()"
+            style="text-align: center;padding: 10px; text-decoration: underline; cursor: pointer;">Sign In</div>
+    </div>
+    <script>
+        function switchVisible() {
+            var x = document.getElementById("signin");
+            var y = document.getElementById("signup");
+            if (x) {
+                if (x.style.display == 'none') {
+                    x.style.display = 'block';
+                    y.style.display = 'none';
+                }
+                else {
+                    x.style.display = 'none';
+                    y.style.display = 'block';
+                }
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

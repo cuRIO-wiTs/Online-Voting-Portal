@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ABOUT</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href = "home.html">Home</a>
+    </div>
+
+    <div class="header">
+        <div class="main">
+            <h1>About Us</h1>
+            <p id="readless">SRM AP is conducting elections in the institute. All the commities are encouraging students
+                to participate in the elections to familiarize the voting system. The term vote refers to making a
+                selection from a list and electing or determining something. The primary goal of elections is to elect
+                representatives chosen by the voters. This online voting system aims to resolve all of the concerns. It
+                should be remembered that with this system in place, the users in this situation will have plenty of
+                time to vote. A voter can use his or her voting right digitally using the Online Voting Portal. Before
+                he or she may vote, he or she must first register
+                <span id="dots">...</span>
+            </p>
+            <p id="readmore">
+                To build this project we used web technologies (HTML,
+                CSS, JS) as the front end, PHP as the middleware, and MySQL as the backend technology.
+                Students who have already registered can log in directly as their credentials are verified with an
+                already registered credentials list and if they match. Students who register their details will be added
+                to the registered credentials list. After logging in the students will be presented with a candidates
+                list and the post they are competing for. Students can then choose to vote for their preferred candidate
+                and once the vote is cast they can no longer cast the same vote for different candidates for the same
+                position. These voting details will be collected and accumulated for future counting where the final
+                results will be displayed accordingly. All of this data will be handled by a structured table format in
+                the database connected to the website.
+            </p>
+            <button id="Read" onclick="Read()">Read More</button>
+        </div>
+    </div>
+    <script>
+        var i = 0;
+        var readmore = document.getElementById('readmore');
+        var dots = document.getElementById('dots');
+        var btn = document.getElementById('Read');
+        function Read() {
+            if (i == 0) {
+                readmore.style.display = "block";
+                dots.style.display = "none";
+                btn.innerHTML = "Read Less";
+                i = 1;
+            }
+            else {
+                readmore.style.display = "none";
+                dots.style.display = "block";
+                i = 0;
+                btn.innerHTML = "Read More";
+            }
+        }
+    </script>
+</body>
+
+</html>
